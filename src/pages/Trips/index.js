@@ -1,5 +1,10 @@
+import { Outlet, Link } from "react-router-dom";
+
 export default function Trips() {
-    return (
-        <div>Rendering trips</div>
-    )
+  return (
+    <>
+    <Link to="sequoia">Sequoia</Link>
+      <Outlet />
+    </>
+  )
 }

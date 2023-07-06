@@ -1,10 +1,36 @@
-.main-bg {
-  background-image: url("./images/joysoflife.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+body {
+  background-color: "#fefae0"
+}
+h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20vh;
+  letter-spacing: 1vw;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background:url('https://garden.spoonflower.com/c/12989055/p/f/m/WT8kGutN89t5A6iiL9bI6mmafBCo5FiJqDt7ZLhAj2ZILeQgaoI3/West%20Coast%20Dahlia%20Garden%20in%20Bloom%20Ronya.jpg');
+  // background:url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
+   background-size: auto 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+  &:nth-child(3) {
+    top: 50%;
+  }
+  @keyframes shine {
+    from {
+      background-position: center 0;
+    }
+    to {
+      background-position: center 200%;
+    }
+  }
 }
 
 .card {
